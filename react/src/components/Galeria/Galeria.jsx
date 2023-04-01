@@ -1,44 +1,37 @@
-import { useState } from "react"
-import axios from 'axios'
+import { useEffect, useState } from "react";
+import styles from "./Galeria.module.css";
 
-import styles from './Galeria.module.css'
+function Galeria() {
+  const [characters, setCharacters] = useState([]);
 
+  const getCharacters = async () => {
+    const response = await axios.get(
+      `https://rickandmortyapi.com/api/character`
+    );
 
-function Galeria(){
-    
-    const [character, setCharacter] = useState("vazio")
+    setCharacters(response.data);
 
-    const getCharacter = async ()=> {
+    const personagem = (response.data.results.map((item) => console.log(item)));
+    console.log(characters);
+  };
 
-        const response = await axios.get(`https://rickandmortyapi.com/api/character`)
+  return (
+    <>
+      <button onClick={getCharacters}>Pesquisar</button>
 
-        setCharacter(response.data)
-        console.log(response)
-
-        console.log(response.data.results.map((item)=> console.log(item)))
-        console.log(character)
-        
-    }
-
-    
-    return(
-        <>
-            <button onClick={getCharacter}>Pesquisar</button>
-
-            {
-                character === "vazio" ?
-                <h2>Nada carregado ainda</h2>
-                :
-                <div>
-                    <h2>Resultados da pesquisa</h2>
-                    <p>Nome:{character.name}</p>
-                    <p></p>
-                    <p></p>
-                    <p></p>
-                </div>
-            }
-        </>
-    )
+      {characters === "vazio" ? (
+        <h2>Nada carregado ainda</h2>
+      ) : (
+        <div>
+          <h2>Resultados da pesquisa</h2>
+          <p>Nome:{personagem.name}</p>
+          <p></p>
+          <p></p>
+          <p></p>
+        </div>
+      )}
+    </>
+  );
 }
 
-export default Galeria
+export default Galeria;
