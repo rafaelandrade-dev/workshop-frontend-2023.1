@@ -1,0 +1,10 @@
+.nav_text{
+    font-family: 'Shadows Into Light', cursive;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 0;
+    margin: 0;
+}
+.NavSide{
+    background-color: green;
+}
