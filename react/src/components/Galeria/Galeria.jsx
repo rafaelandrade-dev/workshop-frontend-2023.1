@@ -19,7 +19,7 @@ function Galeria() {
             {characters !== "vazio" && (
                 <ul>
                     {characters.map((item, index)=>(
-                        <li key={index}>{item}</li>
+                        <li key={index}>{item.name}</li>
                     ))}
                 </ul>
             )}
