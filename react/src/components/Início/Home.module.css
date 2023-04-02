@@ -1,0 +1,18 @@
+body{
+    background-image: url(/Users/rafaelandrade/Documents/PROGRAMAÇÃO/workshop-frontend-2023.1/react/src/assets/RickAndMortyBG.jpeg);
+    background-color: rgba(0, 0, 0, 0.548);
+    background-blend-mode: darken;
+    background-position: top right;
+    background-size: cover;
+}
+
+.p_container{
+    display: flex;
+    text-align: right;
+    color: white;
+    width: 80rem;
+    margin-top: 18rem;
+    float: right;
+    font-size: 1.7rem;
+    margin-right: 1rem;
+}

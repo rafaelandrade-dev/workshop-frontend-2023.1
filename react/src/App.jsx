@@ -1,5 +1,4 @@
 import {BrowserRouter as Router, Routes, Route} from "react-router-dom"
-import axios from 'axios'
 
 import NavSide from './components/NavSide/NavSide'
 import Home from './components/Início/Home'

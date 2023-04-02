@@ -31,7 +31,7 @@ function NavSide(){
                         <NavItem eventKey="episodios">
                             <NavIcon><i className="fa fa-fw fa-play" style={{ fontSize: "1.5em"}}></i></NavIcon>
                             <NavText className={styles.nav_text} style={{ fontSize: "1.7rem"}}>Episódios</NavText>
-                        </NavItem>
+                        </NavItem>  
 
                 </SideNav.Nav>
 

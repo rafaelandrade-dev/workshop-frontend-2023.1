@@ -1,4 +1,54 @@
-body{
+img{
+    border-radius: 40px;
+}
+
+h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+    margin: 5rem;
+    justify-content: space-between;
+    padding-bottom: 7.3rem;
+}
+li{
+    display: flex;
+    list-style: none;
+    justify-content: center;
+}
+.btn_container{
     display: flex;
     justify-content: center;
+}
+button{
+    width: 12rem;
+    height: 4rem;
+    border: 0px;
+    color: white;
+    background-color: green;
+    border-radius: 30px;
+    font-size: 2rem;
+    font-family: 'Shadows Into Light', cursive;
+}
+
+button:hover{
+    transform: translateY(-10px);
+    color: green;
+    background-color: transparent;
+    transition: all 0.375s;
+}
+
+.name{
+    font-size: 1.5rem;
+}
+
+.card{
+    border: 2px solid black;
+    background-color: rgb(205, 205, 205);
+    box-shadow: 5px 5px 8px solid black;
+    border-radius: 40px;
 }
