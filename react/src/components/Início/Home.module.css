@@ -1,5 +1,5 @@
 body{
-    background-image: url(/Users/rafaelandrade/Documents/PROGRAMAÇÃO/workshop-frontend-2023.1/react/src/assets/RickAndMortyBG.jpeg);
+    background-image: url(./src/assets/RickAndMortyBG.jpeg);
     background-color: rgba(0, 0, 0, 0.548);
     background-blend-mode: darken;
     background-position: top right;
